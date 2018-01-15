@@ -16,7 +16,7 @@ public class ArticleDaoImp implements ArticleDao {
 	private SessionFactory sessionFactory;
 	@Override
 	public void add(Article article) {
-		sessionFactory.getCurrentSession().save(client);
+		sessionFactory.getCurrentSession().save(article);
 
 	}
 
