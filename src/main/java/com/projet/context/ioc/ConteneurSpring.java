@@ -18,13 +18,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @PropertySource(value= {"classpath:db.properties"})
-@ComponentScan(basePackages = "com.formation.model")
 @EnableTransactionManagement
+@ComponentScan(basePackages = "com.projet")
 public class ConteneurSpring {
 	
 	@Autowired
 	private Environment env;
-
 
 	@Bean
 	public DataSource getDataSource() {
@@ -49,7 +48,7 @@ public class ConteneurSpring {
 		properties.put(AvailableSettings.CURRENT_SESSION_CONTEXT_CLASS, env.getRequiredProperty("hibernate.current.session.context.class"));
 		
 		factoryBean.setHibernateProperties(properties);
-		factoryBean.setPackagesToScan(new String[] {"com.formation.model"});
+		factoryBean.setPackagesToScan(new String[] {"com.projet"});
 		return factoryBean;
 	}
 	
