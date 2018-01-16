@@ -21,7 +21,7 @@ public class User {
 	@Column(name = "PSEUDO")
 	private String pseudo;
 	
-	@Column(name = "MOT DE PASSE")
+	@Column(name = "MOT_DE_PASSE")
 	private String mdp;
 	
 	public User() {
