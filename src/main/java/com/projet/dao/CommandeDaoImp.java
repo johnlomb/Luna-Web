@@ -6,9 +6,11 @@ import javax.persistence.TypedQuery;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.projet.model.Commande;
 
+@Repository
 public class CommandeDaoImp implements CommandeDao {
 
 	@Autowired

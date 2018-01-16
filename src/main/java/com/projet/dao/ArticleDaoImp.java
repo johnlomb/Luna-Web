@@ -3,17 +3,18 @@ package com.projet.dao;
 import java.util.List;
 
 import javax.persistence.TypedQuery;
-
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.projet.model.Article;
-import com.projet.model.Client;
 
+@Repository
 public class ArticleDaoImp implements ArticleDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;
+	
 	@Override
 	public void add(Article article) {
 		sessionFactory.getCurrentSession().save(article);
