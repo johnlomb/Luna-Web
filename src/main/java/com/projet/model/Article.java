@@ -36,9 +36,6 @@ public class Article {
 	@Column(name = "DESIGNATION")
 	private String designation;
 	
-	@Column(name = "QUANTITE") 
-	private int quantite;
-	
 	@Column(name = "PRIX UNITAIRE")
 	private double prixunitaire;
 	
@@ -46,11 +43,10 @@ public class Article {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Article(String codecategorie, String designation, int quantite, double prixunitaire) {
+	public Article(String codecategorie, String designation, double prixunitaire) {
 		super();
 		this.codecategorie = codecategorie;
 		this.designation = designation;
-		this.quantite = quantite;
 		this.prixunitaire = prixunitaire;
 	}
 
@@ -74,14 +70,6 @@ public class Article {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
-	}
-
-	public int getQuantite() {
-		return quantite;
-	}
-
-	public void setQuantite(int quantite) {
-		this.quantite = quantite;
 	}
 
 	public double getPrixunitaire() {
