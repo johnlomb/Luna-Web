@@ -24,19 +24,19 @@ public class Client {
 	@Column(name = "PRENOM")
 	private String prenom;
 	
-	@Column(name = "CARTE FIDELITE")
+	@Column(name = "CARTE_FIDELITE")
 	private boolean cartefidelite;
 	
-	@Column(name = "DATE DE CREATION")
+	@Column(name = "DATE_DE_CREATION")
 	private String datecreation;
 	
 	@Column(name = "ADRESSE")
 	private String adresse;
 	
-	@Column(name = "TELEPHONE FIXE")
+	@Column(name = "TELEPHONE_FIXE")
 	private String telfixe;
 	
-	@Column(name = "TELEPHONE MOBILE")
+	@Column(name = "TELEPHONE_MOBILE")
 	private String telmobile;
 	
 	@Column(name = "EMAIL")
@@ -45,7 +45,7 @@ public class Client {
 	@Column(name = "REMARQUES")
 	private String remarques;
 	
-	@Column(name = "CODE POSTAL")
+	@Column(name = "CODE_POSTAL")
 	private int codepostal;
 	
 	@Column(name = "VILLE")

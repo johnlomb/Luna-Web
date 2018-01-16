@@ -22,7 +22,7 @@ public class UserDaoImp implements UserDao {
 
 	@Override
 	public User getUser(String pseudo,String mdp) {
-		Query query = sessionFactory.getCurrentSession().createQuery("from USERS where PSEUDO= "+pseudo+"and MOT_DE_PASSE="+mdp);
+		Query query = sessionFactory.getCurrentSession().createQuery("from User where PSEUDO ='"+pseudo+"'  and MOTDEPASSE ='"+mdp+"'");
 		return (User)query.getSingleResult();
 
 	}

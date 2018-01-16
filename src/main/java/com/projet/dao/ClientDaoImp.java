@@ -24,7 +24,7 @@ public class ClientDaoImp implements ClientDao{
 	@Override
 	public List<Client> listClient() {
 		@SuppressWarnings("unchecked")
-		TypedQuery<Client>query=sessionFactory.getCurrentSession().createQuery("from CLIENT");
+		TypedQuery<Client>query=sessionFactory.getCurrentSession().createQuery("from Client");
 		return query.getResultList();
 	}
 

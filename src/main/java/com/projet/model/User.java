@@ -21,7 +21,7 @@ public class User {
 	@Column(name = "PSEUDO")
 	private String pseudo;
 	
-	@Column(name = "MOT_DE_PASSE")
+	@Column(name = "MOTDEPASSE")
 	private String mdp;
 	
 	public User() {
@@ -29,9 +29,8 @@ public class User {
 	}
 	
 	
-	public User(int iduser, String pseudo, String mdp) {
+	public User(String pseudo, String mdp) {
 		super();
-		this.iduser = iduser;
 		this.pseudo = pseudo;
 		this.mdp = mdp;
 	}
