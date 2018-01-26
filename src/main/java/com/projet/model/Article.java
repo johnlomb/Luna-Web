@@ -30,17 +30,18 @@ public class Article {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idarticle;
 	
-	@Column(name = "CODE CATEGORIE")
+	private String codearticle;
+	@Column(name = "CODE_CATEGORIE")
 	private String codecategorie;
 	
 	@Column(name = "DESIGNATION")
 	private String designation;
 	
-	@Column(name = "PRIX UNITAIRE")
+	@Column(name = "PRIX_UNITAIRE")
 	private double prixunitaire;
 	
 	public Article() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Article(String codecategorie, String designation, double prixunitaire) {
@@ -51,6 +52,18 @@ public class Article {
 	}
 
 
+
+	public String getCodearticle() {
+		return codearticle;
+	}
+
+	public void setCodearticle(String codearticle) {
+		this.codearticle = codearticle;
+	}
+
+	public void setIdarticle(int idarticle) {
+		this.idarticle = idarticle;
+	}
 
 	public int getIdarticle() {
 		return idarticle;
@@ -78,6 +91,12 @@ public class Article {
 
 	public void setPrixunitaire(double prixunitaire) {
 		this.prixunitaire = prixunitaire;
+	}
+
+	@Override
+	public String toString() {
+		return "Article [idarticle=" + idarticle + ", codearticle=" + codearticle + ", codecategorie=" + codecategorie
+				+ ", designation=" + designation + ", prixunitaire=" + prixunitaire + "]";
 	}
 
 	

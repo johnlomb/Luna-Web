@@ -39,4 +39,10 @@ public class ClientServiceImp implements ClientService{
 		
 	}
 
+	@Override
+	public Client getClient(Client client) {
+		
+		return clientDao.getClient(client);
+	}
+
 }

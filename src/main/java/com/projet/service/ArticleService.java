@@ -9,4 +9,6 @@ public interface ArticleService {
 	List<Article> listArticle();
 	void del(Article article);
 	void update(Article article);
+	public Article getArticle(Article article);
+	public Article getArticle(String codearticle);
 }

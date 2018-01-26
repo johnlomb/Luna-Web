@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+h2{
+	margin-left:565px;
+	font-size:31px;
+}
+#degrade{
+	background-image:linear-gradient(#EFEFEF, #8b8b8b);
+	padding:1px 0 1px 0;
+	height:533px;
+}
+#form p{
+	padding-left:87px;
+}
+#addUser_0{
+	margin-left:78px;
+	border:2px solid black;
+	padding:3px 15px 3px 15px;
+	border-radius:8px;
+	background-color:white;
+}
+
+#addUser_0:hover{
+	padding:5px 17px 5px 17px;
+}
+#form{
+	margin:150px 42% 156px 39%;
+	border:solid 3px #2e8b57;
+	padding:10px 0px 30px 20px;
+	border-radius:8px;
+	height:107px;
+}
+.tdLabel{
+	text-align:right;
+}
+.messerror{
+	text-align:left;
+}
+#gauche {
+  float: left;
+  height:110px;
+}

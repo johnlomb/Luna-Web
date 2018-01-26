@@ -10,4 +10,5 @@ public interface UserDao {
 	User getUser(String pseudo,String mdp);
 	void del(User user);
 	void update(User user);
+	boolean checkUser(User user);
 }

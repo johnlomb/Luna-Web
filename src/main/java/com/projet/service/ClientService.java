@@ -12,4 +12,6 @@ public interface ClientService {
 	void del(Client client);
 
 	void update(Client client);
+	
+	Client getClient(Client client);
 }

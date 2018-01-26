@@ -7,9 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.stereotype.Service;
 
-@Service
+
+
 @Entity
 @Table(name = "USERS")
 public class User {

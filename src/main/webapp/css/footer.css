@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+footer{
+	background-color:#32353a;
+	height:232px;
+}
+footer h1{
+	font-size:25px;
+	text-align:center;
+	line-height:232px;
+	color:#8b8b8b;
+}
+footer h1 img{
+	vertical-align:middle;
+}

@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image:url("../img/lune.jpg");
+	background-size:100%;
+}
+p{
+	color:white;
+	margin-top:25%;
+	font-size:35px;
+	margin-left:25%;
+}

@@ -25,8 +25,8 @@ public class CommandeServiceImpl implements CommandeService {
 
 	@Override
 	public List<Commande> listCommande() {
-		commandeDao.listCommande();
-		return null;
+		return commandeDao.listCommande();
+		
 	}
 
 	@Override
@@ -39,6 +39,9 @@ public class CommandeServiceImpl implements CommandeService {
 	public void update(Commande commande) {
 		commandeDao.update(commande);
 		
+	}
+	public Commande getCommande(Commande commande) {
+		return commandeDao.getCommande(commande);
 	}
 
 }

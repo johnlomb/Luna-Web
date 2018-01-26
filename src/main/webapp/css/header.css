@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+*{
+	margin:0;
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+header {
+  text-align: center;
+  display:block;
+  height:115px;
+  background-color:#0384c8;
+}
+header #gauche {
+  float: left;
+  height:110px;
+}
+header h1{
+	display:inline-block;
+	margin-top:35px;
+}
+header #droite {
+	display:inline-block;
+	height:40px;
+	vertical-align:bottom;
+}

@@ -10,4 +10,5 @@ public interface UserService {
 	void del(User user);
 
 	void update(User user);
+	boolean checkUser(User user);
 }

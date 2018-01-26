@@ -9,4 +9,5 @@ public interface CommandeService {
 	List<Commande> listCommande();
 	void del(Commande commande);
 	void update(Commande commande);
+	Commande getCommande(Commande commande);
 }

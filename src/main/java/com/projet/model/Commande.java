@@ -24,10 +24,10 @@ public class Commande {
 	@Column(name = "CLIENT")
 	private String client;
 	
-	@Column(name = "MODE DE PAIEMENT")
+	@Column(name = "MODE_DE_PAIEMENT")
 	private String modepaiement;
 	
-	@Column(name = "TOTAL TTC")
+	@Column(name = "TOTAL_TTC")
 	private double totalTTC;
 	
 	// Constructeur par défaut
@@ -43,9 +43,13 @@ public class Commande {
 		this.totalTTC = totalTTC;
 	}
 
-	// Getters et les setters
+	
 	public int getIdcommande() {
 		return idcommande;
+	}
+
+	public void setIdcommande(int idcommande) {
+		this.idcommande = idcommande;
 	}
 
 	public String getDate() {
@@ -78,6 +82,12 @@ public class Commande {
 
 	public void setTotalTTC(double totalTTC) {
 		this.totalTTC = totalTTC;
+	}
+
+	@Override
+	public String toString() {
+		return "Commande [idcommande=" + idcommande + ", date=" + date + ", client=" + client + ", modepaiement="
+				+ modepaiement + ", totalTTC=" + totalTTC + "]";
 	}
 
 	

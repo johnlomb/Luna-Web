@@ -37,4 +37,10 @@ public class UserServiceImp implements UserService {
 
 	}
 
+	@Override
+	public boolean checkUser(User user) {
+		
+		return userDao.checkUser(user);
+	}
+
 }

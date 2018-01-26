@@ -1,6 +1,7 @@
 package com.projet.dao;
 
 import java.util.List;
+import java.util.ListIterator;
 
 import javax.persistence.TypedQuery;
 
@@ -24,7 +25,7 @@ public class CommandeDaoImp implements CommandeDao {
 	@Override
 	public List<Commande> listCommande() {
 		@SuppressWarnings("unchecked")
-		TypedQuery<Commande> query = sessionFactory.getCurrentSession().createQuery("from COMMANDES");
+		TypedQuery<Commande> query = sessionFactory.getCurrentSession().createQuery("from Commande");
 		return query.getResultList();
 	}
 
@@ -38,6 +39,19 @@ public class CommandeDaoImp implements CommandeDao {
 	public void update(Commande commande) {
 		sessionFactory.getCurrentSession().update(commande);
 
+	}
+
+	@Override
+	public Commande getCommande(Commande commande) {
+		List<Commande> lc=listCommande();
+		ListIterator<Commande> li=lc.listIterator();
+		while(li.hasNext()) {
+			Commande co=li.next();
+			if(commande.getIdcommande()==co.getIdcommande()) {
+				return co;
+			}
+		}
+		return null;
 	}
 
 }

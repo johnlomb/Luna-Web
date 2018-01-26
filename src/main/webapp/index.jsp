@@ -2,16 +2,14 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
+<%@taglib prefix="s" uri="/struts-tags"%>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="<s:url value='css/index.css'> </s:url>">
+		<meta http-equiv="Refresh" content="1; url=index"> 
 		<title>Welcome</title>
 	</head> 
 	<body>
-		<c:url value="/showMessage.html" var="messageUrl" />
-		<a href="${messageUrl}">Click to enter</a>
+		<p>Veuillez patienter durant le chargement de l'application...</p>
 	</body>
 </html>

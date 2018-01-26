@@ -70,6 +70,10 @@ public class Client {
 		this.ville = ville;
 	}
 
+	public void setIdclient(int idclient) {
+		this.idclient = idclient;
+	}
+
 	public int getIdclient() {
 		return idclient;
 	}
