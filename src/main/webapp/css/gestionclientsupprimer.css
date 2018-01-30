@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+#content{
+	min-height:420px;
+}
+#content h1{
+	text-align:center;
+}
+
+#form{
+	margin:100px 41% 0 40%;
+	border:solid 3px #2e8b57;
+	padding:10px 0px 10px 20px;
+	border-radius:8px;
+	background-color:#afafaf;
+}
+
+#delClient_0{
+	float:right;
+	margin-top:10px;
+}

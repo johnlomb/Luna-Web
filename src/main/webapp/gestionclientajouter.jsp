@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>GestionClientAjouter -Luna</title>
-<link rel="stylesheet" type="text/css" href="<s:url value='css/gestionclientajouter.css'> </s:url>">
+<link rel="stylesheet" type="text/css" href="<s:url value='css/contentform.css'> </s:url>">
 <link rel="stylesheet" type="text/css" href="<s:url value='css/header.css'> </s:url>">
 <link rel="stylesheet" type="text/css" href="<s:url value='css/footer.css'> </s:url>">
 </head>
@@ -14,6 +14,9 @@
 	<header> <img id="gauche" src="img/logo-as.png" />
 	<h1>Projet Luna Web</h1>
 	<img id="droite" src="img/Moon-32.png" /> </header>
+	<div id="content">
+	<h1>Formulaire d'ajout de client</h1>
+	<div id="form">
 	<s:form action="addClient" method="POST">
 		<s:textfield name="nom" id="nom" label="Nom"></s:textfield>
 		<s:textfield name="prenom" id="prenom" label="Prénom"></s:textfield>
@@ -34,6 +37,8 @@
 		<s:submit value="Valider"></s:submit>
 
 	</s:form>
+	</div>
+	</div>
 	<footer>
 	<h1>
 		Developpé par Jonathan Lombard sous l'expertise de l'entreprise

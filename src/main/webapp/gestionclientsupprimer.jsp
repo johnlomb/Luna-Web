@@ -5,14 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>GestionClientSupprimer - Luna</title>
 <link rel="stylesheet" type="text/css" href="<s:url value='css/header.css'> </s:url>">
 <link rel="stylesheet" type="text/css" href="<s:url value='css/footer.css'> </s:url>">
+<link rel="stylesheet" type="text/css" href="<s:url value='css/gestionclientsupprimer.css'> </s:url>">
 </head>
 <body>
 <header> <img id="gauche" src="img/logo-as.png" />
 	<h1>Projet Luna Web</h1>
 	<img id="droite" src="img/Moon-32.png" /> </header>
+	<div id="content">
+	<h1>Formulaire de suppression de client</h1>
+	<div id="form">
 <s:form action="delClient" method="POST">
 		<s:textfield name="nom" id="nom" label="Nom"></s:textfield>
 		<s:textfield name="prenom" id="prenom" label="Prénom"></s:textfield>
@@ -28,6 +32,8 @@
 		<s:submit value="Valider"></s:submit>
 
 	</s:form>
+	</div>
+	</div>
 	<footer>
 	<h1>
 		Developpé par Jonathan Lombard sous l'expertise de l'entreprise
